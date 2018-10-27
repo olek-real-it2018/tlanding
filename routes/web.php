@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('/page', function () {
     return view('page');
 });
+
+Route::get('/context', function () {
+    return view('context');
+});
