@@ -16,7 +16,9 @@ Route::get('/', function () {
 });
 
 Route::get('/page', function () {
-    return view('page');
+    return view('page', [
+        'name'=>'Elisabeth'
+    ]);
 });
 
 Route::get('/context', function () {

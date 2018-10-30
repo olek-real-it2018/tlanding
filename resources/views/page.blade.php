@@ -80,5 +80,8 @@
                 </div>
             </div>
         </div>
+            <div>
+                <h2>Hello, <?= $name; ?>!</h2>
+            </div>
     </body>
 </html>
