@@ -15,12 +15,19 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/page', function () {
+Route::get('/page/new/{id}', function () {
     return view('page', [
         'name'=>'Elisabeth'
     ]);
 });
 
-Route::get('/context', function () {
-    return view('context');
-});
+//Route::get('/context', function () {
+  //  echo config('app.locale');
+//});
+
+//Route::any('/comments',function () {
+//    print_r($_POST);
+//
+//});
+Route::match(['get','post'],'/fallowe','FileController@getfile');
+
